@@ -1,0 +1,32 @@
+algoritmo calcArea;
+// Síntese
+//  Objetivo: Calcular a área de um círculo.
+//  Entrada : Raio fornecido pelo usuário.
+//  Saída   : Área do círculo.
+
+
+principal
+	// Declarações
+
+	inteiro area, raio ;
+
+	// Instruções
+
+	escreval("Informe o raio do círculo : ");
+	leia(raio);
+
+	limpaTela();
+
+	se(raio <= 0)entao
+		escreval("Número inválido");
+	senao
+
+		area =(3.14 * (raio*raio));
+
+		limpaTela();
+
+		escreval("A área do círculo é de :",area);
+
+	fimSe
+fimPrincipal
+

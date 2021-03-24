@@ -1,0 +1,32 @@
+algoritmo qtdRolosFios;
+
+// Síntese
+
+//  Objetivo:  Calcular e auxiliar um construtor a descobrir a quantidade de fios avulsos e rolos que precisam ser adquiridos.
+//  Entrada :  Fios e rolos.
+//  Saída   : quantidade de rolos , fios e metros avulsos.
+
+principal
+	// Declarações
+
+	inteiro qtdFios , qtdRolos , qtdAvulso;
+
+	// Instruções
+
+	escreval("Quantos metros de fios são necessários para obra?");
+	leia(qtdFios);
+	limpaTela();
+	se(qtdFios <=0)entao
+		escreval("Quantidade de fios inválida");
+	senao
+		qtdRolos = qtdFios \50;
+
+		qtdAvulso = qtdFios mod 50;
+
+		escreval(qtdRolos ," Rolos de fios,",qtdAvulso, " Metros Avulso");
+	fimSe
+
+fimPrincipal
+
+
+

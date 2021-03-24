@@ -1,0 +1,38 @@
+algoritmo leiaFuncionario;
+// Síntese
+//  Objetivo:ler os dados de um funcionário sendo:nome,sexo,número da matrícula,número de horas trabalhadas,valor que recebe por hora e calcular o seu salário.
+//  Entrada : nome,sexo,número da matrícula,número de horas trabalhadas,valor que recebe por hora
+//  Saída   :nome,sexo,número da matrícula,número de horas trabalhadas,valor que recebe por hora e salário do funcionário
+
+
+principal
+	// Declarações
+	texto nome;
+	caracter sexo;
+	inteiro numMatricula,horasTrab,salarioH,salarioCalc;
+
+	// Instruções
+	escreval("Informe o nome do funcionario : ");
+	leia(nome);
+	escreval("Informe o Sexo do funcionario, sendo M para Masculino e F para Feminino: ");
+	leiaCaracter(sexo);
+	escreval("Informe o número de matrícula do funcionário: ");
+	leia(numMatricula);
+	escreval("Informe a quantidade de horas trabalhadas pelo funcionárion no mês: ");
+	leia(horasTrab);
+	escreval("Informe o valor que o funcionário recebe por hora trabalhada: ");
+	leia(salarioH);
+	salarioCalc = salarioH * horasTrab;
+	escreval("");
+	escreval("");
+	escreval("Nome: ",nome);
+	escreval("Sexo: ",sexo);
+	escreval("Número de Matrícula: ",numMatricula);
+	escreval("Quantidade de horas trabalhadas no mês: ",horasTrab);
+	escreval("Valor que recebe por hora: ",salarioH);
+	escreval("O salário é de: ",salarioCalc);
+
+
+
+
+fimPrincipal

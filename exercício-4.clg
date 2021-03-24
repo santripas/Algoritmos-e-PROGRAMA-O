@@ -1,0 +1,43 @@
+algoritmo restoQuoci;
+
+// Síntese
+
+//  Objetivo:  Ler dois números e fornecer o resto e o quociente da divisão.
+//  Entrada :  dois números.
+//  Saída   :  resto e quociente da divisão .
+
+
+principal
+	// Declarações
+
+	inteiro num1 , num2, quoci , resto;
+
+
+	// Instruções
+
+	escreval("Informe o primeiro número: ");
+	leia(num1);
+	se(num1 <=0)entao
+		escreval("número inválido");
+	senao
+		escreva("Informe o segundo número: ");
+		leia(num2);
+		se(num2 <=0)entao
+			escreval(" número inválido");
+		senao
+
+			resto = num1 mod num2;
+			quoci = num1 \ num2 ;
+
+			limpaTela();
+
+			escreval("Resto: " ,resto);
+			escreval("Quociente: ",quoci);
+
+		fimSe
+	fimSe
+fimPrincipal
+
+
+
+

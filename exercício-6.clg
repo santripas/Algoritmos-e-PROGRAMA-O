@@ -1,0 +1,35 @@
+algoritmo mediaAluno;
+// Síntese
+//  Objetivo:ler 2 valores de nota e calcular a média sabendo que o valor 1 tem peso 3.5 e o valor 2 tem peso 7.5.
+//  Entrada :valor 1 e valor 2 mais peso 3.5 e peso 7.5
+//  Saída   : média do aluno
+
+
+principal
+	// Declarações
+
+	real notaA , notaB , medAl;
+
+	// Instruções
+
+	escreval("Informe a nota A : ");
+	leia(notaA);
+	se(notaA <0 ou notaA >10)entao
+		limpaTela();
+		escreval("Valor de Nota Incorreto");
+		escreval("Valor não pode ser menor que 0 ou maior que 10");
+	senao
+		escreval("Informe a nota B : ");
+		leia(notaB);
+		se(notaB <0 ou notaB>10)entao
+			limpaTela();
+			escreval("Valor de Nota Incorreto");
+			escreval("Valor não pode ser menor que 0 ou maior que 10");
+		senao
+			medAl= notaA*3.5 + notaB*7.5;
+			escreval("Sua média é = ",medAl/11);
+
+		fimSe
+	fimSe
+
+fimPrincipal

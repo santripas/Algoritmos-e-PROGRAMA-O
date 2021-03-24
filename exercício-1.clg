@@ -1,0 +1,39 @@
+algoritmo conversorHora;
+// Síntese
+//  Objetivo:  Ler o número em horas e exibir em minutos e segundos.
+//  Entrada : Números em horas.
+//  Saída   : Números em minutos e segundos.
+
+
+principal
+	// Declarações
+
+	inteiro horas,minutos,segundos;
+
+	// Instruções
+
+	escreval("Digite um número inteiro de horas:  ");
+	leia(horas);
+
+	limpaTela();
+
+	se(horas <= 0)entao
+		escreval("Número de horas inválido");
+	senao
+		se(horas >24)entao
+			escreval("Números de horas inválido");
+		senao
+
+			minutos = horas*60;
+			segundos = minutos*60;
+
+
+			limpaTela();
+			escreval(horas ," horas");
+			escreval(minutos ," minutos");
+			escreval(segundos, " segundos");
+		fimSe
+	fimSe
+
+
+fimPrincipal

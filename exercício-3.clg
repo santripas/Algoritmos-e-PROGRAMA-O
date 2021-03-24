@@ -1,0 +1,49 @@
+algoritmo medArit;
+// Síntese
+//  Objetivo:  Calcular a média aritmética de 3 números.
+//  Entrada :  3 números.
+//  Saída   : Média aritmética.
+
+
+principal
+	// Declarações
+
+	inteiro num1 , num2 , num3 , med, soma;
+
+	// Instruções
+
+	escreval("Informe o primeiro número a ser calculado : ");
+	leia(num1);
+
+	se(num1 <= 0)entao
+		escreval("Número Inválido");
+	senao
+
+		escreval("Informe o segundo número :");
+		leia(num2);
+
+		se(num2 <= 0)entao
+			escreval("Número Inválido");
+		senao
+
+			escreval("Informe o terceiro número :");
+			leia(num3);
+
+			se(num3 <= 0)entao
+				escreval("Número Inválido");
+			senao
+
+				soma = num1 + num2+ num3;
+				med = soma/3 ;
+
+				limpaTela();
+
+				escreval("A Média aritmética dos números foi de : ",med);
+
+			fimSe
+		fimSe
+	fimSe
+
+
+fimPrincipal
+
